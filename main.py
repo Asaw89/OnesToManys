@@ -4,6 +4,7 @@ from pydantic import BaseModel #FastAPI uses pydantic models
 from typing import Optional
 
 app = FastAPI() #http://127.0.0.1:8000/docs
+    #uvicorn main:app --reload
 
 @app.get("/")
 def home():
