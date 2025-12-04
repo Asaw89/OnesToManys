@@ -144,8 +144,16 @@ def update_album(album_id: int, data: AlbumUpdate):
         WHERE id = ?
     """, (data.musician_id, data.title, data.number_of_tracks, data.label, data.description,album_id))
     connection.commit()
-    cursor.execute("SELECT * FROM musicians WHERE id = ?", (album_id,))
+    cursor.execute("SELECT * FROM albums WHERE id = ?", (album_id,))
     updated = cursor.fetchone()
     connection.close()
     return {"album successfully": updated}
 
+@app.get("/musicians/{musician_id}/albums")
+def get_all_musician_albums(musician_id: int):
+    connection=sqlite3.connect("music.db")
+    cursor=connection.cursor()
+    cursor.execute("SELECT * FROM albums WHERE musician_id = ?", (musician_id,))
+    results = cursor.fetchall()
+    connection.close()
+    return{"albums":results}
