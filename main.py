@@ -2,6 +2,7 @@ from fastapi import FastAPI
 import sqlite3
 from pydantic import BaseModel #FastAPI uses pydantic models
 from typing import Optional
+import json
 
 app = FastAPI() #http://127.0.0.1:8000/docs
     #uvicorn main:app --reload
@@ -156,3 +157,45 @@ def get_all_musician_albums(musician_id: int):
     results = cursor.fetchall()
     connection.close()
     return{"albums":results}
+
+@app.get("/dump")
+def dump_data(file):
+    connection=sqlite3.connect("music.db")
+    cursor=connection.cursor()
+    cursor.execute("SELECT * FROM musicians")
+    musicians = cursor.fetchall()
+    cursor.execute ("SELECT * FROM albums")
+    albums = cursor.fetchall()
+    connection.close()
+
+    data = {
+        "musicians":musicians,
+        "albums":albums
+    }
+
+    with open("backup.json", "w") as file:
+        json.dump(data, file,indent=2)
+    return {"Data has been Exported to backup.json"}
+
+@app.post("/load")
+def load_data():
+    with open("backup.json", "r") as file:
+        data = json.load(file)
+    connection=sqlite3.connect("music.db")
+    cursor=connection.cursor()
+    for musician in data["musicians"]:
+        cursor.execute(
+        "Insert Into musicians(id,musician_name,genre,year_formed,origin) VALUES(?, ?, ? ,?, ?)",
+        musician
+    )
+    for album in data["albums"]:
+        cursor.execute(
+        "Insert Into albums(id,musician_id,title,number_of_tracks,label,description) VALUES(?, ?, ? ,?,?,?)",
+        album
+    )
+    connection.commit()
+    connection.close()
+
+    return{"Data has been imported"}
+
+
