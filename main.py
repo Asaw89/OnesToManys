@@ -3,7 +3,8 @@ import sqlite3
 from pydantic import BaseModel #FastAPI uses pydantic models
 from typing import Optional
 
-app = FastAPI()
+app = FastAPI() #http://127.0.0.1:8000/docs
+    #uvicorn main:app --reload
 
 @app.get("/")
 def home():
@@ -11,7 +12,6 @@ def home():
 
 
 @app.get("/musicians")
-
 def get_musicians():
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
@@ -22,7 +22,6 @@ def get_musicians():
 
 
 @app.get("/albums")
-
 def get_albums():
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
