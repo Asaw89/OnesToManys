@@ -124,6 +124,13 @@ class AlbumUpdate(BaseModel):
 def add_musician(musician: MusicianCreate):
     connection = sqlite3.connect("music.db")
     cursor=connection.cursor()
+    cursor.execute("SELECT * FROM musicians WHERE LOWER(musician_name) = LOWER(?)", (musician.musician_name,))
+    existing = cursor.fetchone()
+
+    if existing:
+        connection.close()
+        return {"error": "This musician already exists", "musician": existing}
+
     cursor.execute(
         "Insert Into musicians(musician_name,genre,year_formed,origin) VALUES(?, ?, ? ,?)",
         (musician.musician_name,musician.genre,musician.year_formed,musician.origin)
@@ -136,6 +143,13 @@ def add_musician(musician: MusicianCreate):
 def add_album(album: AlbumCreate):
     connection = sqlite3.connect("music.db")
     cursor=connection.cursor()
+    cursor.execute("SELECT * FROM albums WHERE LOWER(title) = LOWER(?)", (album.title,))
+    existing = cursor.fetchone()
+
+    if existing:
+        connection.close()
+        return {"error": "This album already exists", "album": existing}
+
     cursor.execute(
         "Insert Into albums(musician_id,title,number_of_tracks,label,description) VALUES(?, ?, ? ,?,?)",
         (album.musician_id,album.title,album.number_of_tracks,album.label,album.description)
