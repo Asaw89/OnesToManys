@@ -6,20 +6,28 @@ import json
 
 app = FastAPI() #http://127.0.0.1:8000/docs
     #uvicorn main:app --reload
+    #http://localhost:8000/musicians
 
-@app.get("/")
-def home():
-    return {"message": "Hello World"}
-
+#all of the albums are associated with this musician
 
 @app.get("/musicians")
 def get_musicians():
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
     cursor.execute("SELECT*FROM musicians")
-    results = cursor.fetchall()
+    rows = cursor.fetchall()
     connection.close()
-    return{"musicians":results}
+    musicians = []
+    for row in rows:
+        musicians.append({
+            "id": row[0],
+            "musician_name": row[1],
+            "genre": row[2],
+            "year_formed": row[3],
+            "origin": row[4]
+        })
+
+    return{"musicians":musicians} #return json list of musicians
 
 
 @app.get("/albums")
@@ -27,27 +35,56 @@ def get_albums():
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
     cursor.execute("SELECT*FROM albums")
-    results = cursor.fetchall()
+    rows = cursor.fetchall()
     connection.close()
-    return{"albums":results}
+    albums = []
+    for row in rows:
+        albums.append({
+            "id": row[0],
+            "musician_id": row[1],
+            "title": row[2],
+            "number_of_tracks": row[3],
+            "label": row[4],
+            "description": row[5]
+        })
+    return {"albums": albums} #return json list of albums
 
 @app.get("/musicians/{musician_id}")
 def get_musician(musician_id: int):
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
     cursor.execute("SELECT * FROM musicians WHERE id = ?", (musician_id,))
-    results = cursor.fetchone()
+    row = cursor.fetchone()
     connection.close()
-    return{"musician":results}
+    if row is None:
+        return {"error": "Musician not found"}
+    musician = {
+        "id": row[0],
+        "musician_name": row[1],
+        "genre": row[2],
+        "year_formed": row[3],
+        "origin": row[4]
+    }
+    return {"musician": musician}
 
 @app.get("/albums/{album_id}")
 def get_album(album_id:int):
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
     cursor.execute("SELECT * FROM albums WHERE id = ?", (album_id,))
-    results = cursor.fetchone()
+    row = cursor.fetchone()
     connection.close()
-    return{"album":results}
+    if row is None:
+        return {'Album not found'}
+    album =({
+            "id": row[0],
+            "musician_id": row[1],
+            "title": row[2],
+            "number_of_tracks": row[3],
+            "label": row[4],
+            "description": row[5]
+        })
+    return {"album": album}
 
 
 class MusicianCreate(BaseModel):
@@ -154,9 +191,21 @@ def get_all_musician_albums(musician_id: int):
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
     cursor.execute("SELECT * FROM albums WHERE musician_id = ?", (musician_id,))
-    results = cursor.fetchall()
+    rows = cursor.fetchall()
     connection.close()
-    return{"albums":results}
+    if rows == []:
+        return {'No Albums not found'}
+    albums = []
+    for row in rows:
+        albums.append({
+            "id": row[0],
+            "musician_id": row[1],
+            "title": row[2],
+            "number_of_tracks": row[3],
+            "label": row[4],
+            "description": row[5]
+        })
+    return {"albums": albums}
 
 @app.get("/dump")
 def dump_data(file):
