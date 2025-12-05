@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI #source venv/bin/activate
 import sqlite3
 from pydantic import BaseModel #FastAPI uses pydantic models
 from typing import Optional
@@ -16,8 +16,8 @@ def get_musicians():
     cursor=connection.cursor()
     cursor.execute("SELECT*FROM musicians")
     rows = cursor.fetchall()
-    connection.close()
     musicians = []
+    connection.close()
     for row in rows:
         musicians.append({
             "id": row[0],
@@ -26,7 +26,6 @@ def get_musicians():
             "year_formed": row[3],
             "origin": row[4]
         })
-
     return{"musicians":musicians} #return json list of musicians
 
 
@@ -49,15 +48,19 @@ def get_albums():
         })
     return {"albums": albums} #return json list of albums
 
-@app.get("/musicians/{musician_id}")
-def get_musician(musician_id: int):
+@app.get("/musicians/search/{name}")
+def get_musician(name:str):
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
-    cursor.execute("SELECT * FROM musicians WHERE id = ?", (musician_id,))
+    cursor.execute("SELECT * FROM musicians WHERE id = ?", (name,))
     row = cursor.fetchone()
-    connection.close()
     if row is None:
-        return {"error": "Musician not found"}
+        cursor.execute("SELECT * FROM musicians ORDER BY RANDOM() LIMIT 1")
+        suggestion = cursor.fetchone()
+        connection.close()
+        return {"error": "Musician not found", "suggestion": suggestion}
+    connection.close()
+
     musician = {
         "id": row[0],
         "musician_name": row[1],
