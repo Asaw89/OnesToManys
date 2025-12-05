@@ -1,4 +1,5 @@
 from fastapi import FastAPI #source venv/bin/activate
+from fastapi.middleware.cors import CORSMiddleware # lets port 8000 talk to port 9000
 import sqlite3
 from pydantic import BaseModel #FastAPI uses pydantic models
 from typing import Optional
@@ -7,6 +8,12 @@ import json
 app = FastAPI() #http://127.0.0.1:8000/docs
     #uvicorn main:app --reload
     #http://localhost:8000/musicians
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 #all of the albums are associated with this musician
 
