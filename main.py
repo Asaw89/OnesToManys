@@ -52,7 +52,7 @@ def get_albums():
 def get_musician(name:str):
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
-    cursor.execute("SELECT * FROM musicians WHERE id = ?", (name,))
+    cursor.execute("SELECT * FROM musicians WHERE LOWER(musician_name) = LOWER(?)",(name, ))
     row = cursor.fetchone()
     if row is None:
         cursor.execute("SELECT * FROM musicians ORDER BY RANDOM() LIMIT 1")
@@ -74,11 +74,14 @@ def get_musician(name:str):
 def get_album(album_id:int):
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
-    cursor.execute("SELECT * FROM albums WHERE id = ?", (album_id,))
-    row = cursor.fetchone()
-    connection.close()
+    cursor.execute("SELECT * FROM albums WHERE LOWER(musician_name) = LOWER(?)", (album_id,))
+    row=cursor.fetchone()
     if row is None:
-        return {'Album not found'}
+        cursor.execute("SELECT * FROM albums ORDER BY RANDOM() LIMIT 1")
+        suggestion = cursor.fetchone()
+        connection.close()
+        return {"error": "Album not found", "suggestion": suggestion}
+    connection.close()
     album =({
             "id": row[0],
             "musician_id": row[1],
