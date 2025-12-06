@@ -77,7 +77,7 @@ def get_musician(name:str):
     }
     return {"musician": musician}
 
-@app.get("/albums/{album_id}")
+@app.get("/albums/search/{album_id}")
 def get_album(album_id:int):
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
@@ -213,15 +213,27 @@ def update_album(album_id: int, data: AlbumUpdate):
     connection.close()
     return {"album successfully": updated}
 
-@app.get("/musicians/{musician_id}/albums")
-def get_all_musician_albums(musician_id: int):
+@app.get("/musicians/search/{name}/albums")
+def get_all_musician_albums(name: str):
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
-    cursor.execute("SELECT * FROM albums WHERE musician_id = ?", (musician_id,))
+
+    cursor.execute("SELECT * FROM albums WHERE musician_name = LOWER (?)", (name,))
+
+    musician = cursor.fetchone()
     rows = cursor.fetchall()
+    if musician is None:
+        connection.close()
+        return {"Musician not found"}
+    musician_id = musician[0]
+
+    cursor.execute("SELECT * FROM albums WHERE musician_id = ?", (musician_id))
+    rows=cursor.fetchall()
     connection.close()
+
     if rows == []:
-        return {'No Albums not found'}
+        return {'Albums not found'}
+
     albums = []
     for row in rows:
         albums.append({
