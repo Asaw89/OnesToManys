@@ -1,156 +1,1309 @@
 {
   "musicians": [
-    [100, "Paramore", "Pop Punk", 2004, "Franklin, TN"],
-    [101, "State Champs", "Pop Punk", 2010, "Albany, NY"],
-    [102, "Green Day", "Pop Punk", 1987, "Oakland, CA"],
-    [103, "Blink-182", "Pop Punk", 1992, "San Diego, CA"],
-    [104, "Sum 41", "Pop Punk", 1996, "Ajax, Canada"],
-    [105, "Neck Deep", "Pop Punk", 2012, "Wrexham, Wales"],
-    [106, "The Story So Far", "Pop Punk", 2007, "Walnut Creek, CA"],
-    [107, "All Time Low", "Pop Punk", 2003, "Baltimore, MD"],
-    [108, "Waterparks", "Pop Punk", 2011, "Houston, TX"],
-    [109, "Hot Mulligan", "Pop Punk", 2014, "Lansing, MI"],
-    [110, "Jeff Rosenstock", "Pop Punk", 2000, "Long Island, NY"],
-    [111, "The Offspring", "Pop Punk", 1984, "Huntington Beach, CA"],
-    [112, "Alkaline Trio", "Pop Punk", 1996, "Chicago, IL"],
-    [113, "Origami Angel", "Pop Punk", 2017, "Washington, DC"],
-    [114, "Knuckle Puck", "Pop Punk", 2011, "Chicago, IL"],
-    [115, "Travis Scott", "Hip-Hop", 2012, "Houston, TX"],
-    [116, "Tyler The Creator", "Hip-Hop", 2007, "Los Angeles, CA"],
-    [117, "J. Cole", "Hip-Hop", 2007, "Fayetteville, NC"],
-    [118, "Drake", "Hip-Hop", 2006, "Toronto, Canada"],
-    [119, "21 Savage", "Hip-Hop", 2013, "Atlanta, GA"],
-    [120, "Metro Boomin", "Hip-Hop", 2009, "St. Louis, MO"],
-    [121, "Future", "Hip-Hop", 2003, "Atlanta, GA"],
-    [122, "Lil Baby", "Hip-Hop", 2015, "Atlanta, GA"],
-    [123, "Gunna", "Hip-Hop", 2016, "Atlanta, GA"],
-    [124, "Don Toliver", "Hip-Hop", 2017, "Houston, TX"],
-    [125, "Doja Cat", "Pop", 2014, "Los Angeles, CA"],
-    [126, "Olivia Rodrigo", "Pop", 2020, "Temecula, CA"],
-    [127, "Chappell Roan", "Pop", 2017, "Willard, MO"],
-    [128, "Gracie Abrams", "Pop", 2019, "Los Angeles, CA"],
-    [129, "Tate McRae", "Pop", 2019, "Calgary, Canada"],
-    [130, "Ice Spice", "Hip-Hop", 2021, "Bronx, NY"],
-    [131, "Laufey", "Pop", 2020, "Reykjavik, Iceland"],
-    [132, "Reneé Rapp", "Pop", 2022, "Huntersville, NC"],
-    [133, "NewJeans", "K-Pop", 2022, "Seoul, South Korea"],
-    [134, "Le Sserafim", "K-Pop", 2022, "Seoul, South Korea"],
-    [135, "Stray Kids", "K-Pop", 2018, "Seoul, South Korea"],
-    [136, "Seventeen", "K-Pop", 2015, "Seoul, South Korea"],
-    [137, "Ateez", "K-Pop", 2018, "Seoul, South Korea"],
-    [138, "SZA", "R&B", 2012, "St. Louis, MO"],
-    [139, "Beyoncé", "Pop", 1997, "Houston, TX"],
-    [140, "The Weeknd", "Pop", 2010, "Toronto, Canada"],
-    [141, "Bad Bunny", "Reggaeton", 2013, "San Juan, Puerto Rico"],
-    [142, "Peso Pluma", "Regional Mexican", 2020, "Guadalajara, Mexico"],
-    [143, "Fuerza Regida", "Regional Mexican", 2015, "San Bernardino, CA"],
-    [144, "Billie Eilish", "Pop", 2015, "Los Angeles, CA"],
-    [145, "Dua Lipa", "Pop", 2015, "London, UK"],
-    [146, "Harry Styles", "Pop", 2010, "Redditch, UK"],
-    [147, "Hozier", "Pop", 2013, "Dublin, Ireland"],
-    [148, "Noah Kahan", "Pop", 2017, "Strafford, VT"],
-    [149, "Zach Bryan", "Country", 2019, "Oologah, OK"]
+    [
+      2,
+      "Kendrick Lamar",
+      "Hip Hop/ R&B",
+      2004,
+      "Compton,CA"
+    ],
+    [
+      3,
+      "Blackpink",
+      "K-pop",
+      2016,
+      "Seoul, South Korea"
+    ],
+    [
+      4,
+      "Sabrina Carpenter",
+      "Pop",
+      2014,
+      "Quakertown,PA"
+    ],
+    [
+      5,
+      "Post Malone",
+      "Pop",
+      2015,
+      "Syracuse, NY"
+    ],
+    [
+      7,
+      "Taylor Swift",
+      "Pop",
+      2006,
+      "Reading,PA"
+    ],
+    [
+      8,
+      "Justin Bieber",
+      "Pop",
+      2009,
+      "London,Ontario, Canada"
+    ],
+    [
+      100,
+      "Paramore",
+      "Pop Punk",
+      2004,
+      "Franklin, TN"
+    ],
+    [
+      101,
+      "State Champs",
+      "Pop Punk",
+      2010,
+      "Albany, NY"
+    ],
+    [
+      102,
+      "Green Day",
+      "Pop Punk",
+      1987,
+      "Oakland, CA"
+    ],
+    [
+      103,
+      "Blink-182",
+      "Pop Punk",
+      1992,
+      "San Diego, CA"
+    ],
+    [
+      104,
+      "Sum 41",
+      "Pop Punk",
+      1996,
+      "Ajax, Canada"
+    ],
+    [
+      105,
+      "Neck Deep",
+      "Pop Punk",
+      2012,
+      "Wrexham, Wales"
+    ],
+    [
+      106,
+      "The Story So Far",
+      "Pop Punk",
+      2007,
+      "Walnut Creek, CA"
+    ],
+    [
+      107,
+      "All Time Low",
+      "Pop Punk",
+      2003,
+      "Baltimore, MD"
+    ],
+    [
+      108,
+      "Waterparks",
+      "Pop Punk",
+      2011,
+      "Houston, TX"
+    ],
+    [
+      109,
+      "Hot Mulligan",
+      "Pop Punk",
+      2014,
+      "Lansing, MI"
+    ],
+    [
+      110,
+      "Jeff Rosenstock",
+      "Pop Punk",
+      2000,
+      "Long Island, NY"
+    ],
+    [
+      111,
+      "The Offspring",
+      "Pop Punk",
+      1984,
+      "Huntington Beach, CA"
+    ],
+    [
+      112,
+      "Alkaline Trio",
+      "Pop Punk",
+      1996,
+      "Chicago, IL"
+    ],
+    [
+      113,
+      "Origami Angel",
+      "Pop Punk",
+      2017,
+      "Washington, DC"
+    ],
+    [
+      114,
+      "Knuckle Puck",
+      "Pop Punk",
+      2011,
+      "Chicago, IL"
+    ],
+    [
+      115,
+      "Travis Scott",
+      "Hip-Hop",
+      2012,
+      "Houston, TX"
+    ],
+    [
+      116,
+      "Tyler The Creator",
+      "Hip-Hop",
+      2007,
+      "Los Angeles, CA"
+    ],
+    [
+      117,
+      "J. Cole",
+      "Hip-Hop",
+      2007,
+      "Fayetteville, NC"
+    ],
+    [
+      118,
+      "Drake",
+      "Hip-Hop",
+      2006,
+      "Toronto, Canada"
+    ],
+    [
+      119,
+      "21 Savage",
+      "Hip-Hop",
+      2013,
+      "Atlanta, GA"
+    ],
+    [
+      120,
+      "Metro Boomin",
+      "Hip-Hop",
+      2009,
+      "St. Louis, MO"
+    ],
+    [
+      121,
+      "Future",
+      "Hip-Hop",
+      2003,
+      "Atlanta, GA"
+    ],
+    [
+      122,
+      "Lil Baby",
+      "Hip-Hop",
+      2015,
+      "Atlanta, GA"
+    ],
+    [
+      123,
+      "Gunna",
+      "Hip-Hop",
+      2016,
+      "Atlanta, GA"
+    ],
+    [
+      124,
+      "Don Toliver",
+      "Hip-Hop",
+      2017,
+      "Houston, TX"
+    ],
+    [
+      125,
+      "Doja Cat",
+      "Pop",
+      2014,
+      "Los Angeles, CA"
+    ],
+    [
+      126,
+      "Olivia Rodrigo",
+      "Pop",
+      2020,
+      "Temecula, CA"
+    ],
+    [
+      127,
+      "Chappell Roan",
+      "Pop",
+      2017,
+      "Willard, MO"
+    ],
+    [
+      128,
+      "Gracie Abrams",
+      "Pop",
+      2019,
+      "Los Angeles, CA"
+    ],
+    [
+      129,
+      "Tate McRae",
+      "Pop",
+      2019,
+      "Calgary, Canada"
+    ],
+    [
+      130,
+      "Ice Spice",
+      "Hip-Hop",
+      2021,
+      "Bronx, NY"
+    ],
+    [
+      131,
+      "Laufey",
+      "Pop",
+      2020,
+      "Reykjavik, Iceland"
+    ],
+    [
+      132,
+      "Rene\u00e9 Rapp",
+      "Pop",
+      2022,
+      "Huntersville, NC"
+    ],
+    [
+      133,
+      "NewJeans",
+      "K-Pop",
+      2022,
+      "Seoul, South Korea"
+    ],
+    [
+      134,
+      "Le Sserafim",
+      "K-Pop",
+      2022,
+      "Seoul, South Korea"
+    ],
+    [
+      135,
+      "Stray Kids",
+      "K-Pop",
+      2018,
+      "Seoul, South Korea"
+    ],
+    [
+      136,
+      "Seventeen",
+      "K-Pop",
+      2015,
+      "Seoul, South Korea"
+    ],
+    [
+      137,
+      "Ateez",
+      "K-Pop",
+      2018,
+      "Seoul, South Korea"
+    ],
+    [
+      138,
+      "SZA",
+      "R&B",
+      2012,
+      "St. Louis, MO"
+    ],
+    [
+      139,
+      "Beyonc\u00e9",
+      "Pop",
+      1997,
+      "Houston, TX"
+    ],
+    [
+      140,
+      "The Weeknd",
+      "Pop",
+      2010,
+      "Toronto, Canada"
+    ],
+    [
+      141,
+      "Bad Bunny",
+      "Reggaeton",
+      2013,
+      "San Juan, Puerto Rico"
+    ],
+    [
+      142,
+      "Peso Pluma",
+      "Regional Mexican",
+      2020,
+      "Guadalajara, Mexico"
+    ],
+    [
+      143,
+      "Fuerza Regida",
+      "Regional Mexican",
+      2015,
+      "San Bernardino, CA"
+    ],
+    [
+      144,
+      "Billie Eilish",
+      "Pop",
+      2015,
+      "Los Angeles, CA"
+    ],
+    [
+      145,
+      "Dua Lipa",
+      "Pop",
+      2015,
+      "London, UK"
+    ],
+    [
+      146,
+      "Harry Styles",
+      "Pop",
+      2010,
+      "Redditch, UK"
+    ],
+    [
+      147,
+      "Hozier",
+      "Pop",
+      2013,
+      "Dublin, Ireland"
+    ],
+    [
+      148,
+      "Noah Kahan",
+      "Pop",
+      2017,
+      "Strafford, VT"
+    ],
+    [
+      149,
+      "Zach Bryan",
+      "Country",
+      2019,
+      "Oologah, OK"
+    ],
+    [
+      150,
+      "Gangsta Grass",
+      "Bluegrass Hip-Hop",
+      2006,
+      "Brooklyn, NY"
+    ]
   ],
   "albums": [
-    [200, 100, "This Is Why", 10, "Atlantic Records", "2023 comeback album"],
-    [201, 100, "After Laughter", 12, "Fueled By Ramen", "Synth-pop evolution"],
-    [202, 101, "Kings of the New Age", 11, "Pure Noise Records", "2022 release"],
-    [203, 101, "Living Proof", 10, "Pure Noise Records", "Fan favorite"],
-    [204, 102, "Saviors", 15, "Reprise Records", "2024 comeback"],
-    [205, 102, "American Idiot", 13, "Reprise Records", "Rock opera classic"],
-    [206, 103, "ONE MORE TIME...", 17, "Columbia Records", "2023 reunion album"],
-    [207, 103, "Enema of the State", 12, "MCA Records", "Breakthrough album"],
-    [208, 104, "Heaven :x: Hell", 20, "Rise Records", "Final album 2024"],
-    [209, 104, "All Killer No Filler", 13, "Island Records", "Debut breakthrough"],
-    [210, 105, "Neck Deep", 11, "Hopeless Records", "2024 self-titled"],
-    [211, 105, "All Distortions Are Intentional", 13, "Hopeless Records", "Concept album"],
-    [212, 106, "I Want To Disappear", 10, "Pure Noise Records", "2024 return"],
-    [213, 106, "Proper Dose", 10, "Pure Noise Records", "Mature sound"],
-    [214, 107, "Tell Me Im Alive", 15, "Fueled By Ramen", "2023 release"],
-    [215, 107, "So Wrong Its Right", 12, "Hopeless Records", "Career defining"],
-    [216, 108, "INTELLECTUAL PROPERTY", 14, "300 Entertainment", "2023 album"],
-    [217, 108, "Greatest Hits", 16, "300 Entertainment", "Compilation"],
-    [218, 109, "Why Would I Watch", 10, "Wax Bodega", "2023 emo revival"],
-    [219, 109, "Youll Be Fine", 10, "No Sleep Records", "Breakthrough"],
-    [220, 110, "HELLMODE", 13, "Polyvinyl Records", "2023 masterpiece"],
-    [221, 110, "NO DREAM", 11, "Polyvinyl Records", "Punk energy"],
-    [222, 111, "SUPERCHARGED", 10, "Concord Records", "2024 album"],
-    [223, 111, "Americana", 14, "Columbia Records", "Classic album"],
-    [224, 112, "Blood Hair and Eyeballs", 13, "Rise Records", "2024 release"],
-    [225, 112, "From Here to Infirmary", 14, "Vagrant Records", "Fan favorite"],
-    [226, 113, "Feeling Not Found", 17, "Counter Intuitive", "2023 double album"],
-    [227, 113, "GAMI GANG", 26, "Counter Intuitive", "Ambitious project"],
-    [228, 114, "Losing What We Love", 10, "Rise Records", "2023 release"],
-    [229, 114, "Copacetic", 12, "Rise Records", "Debut album"],
-    [230, 115, "UTOPIA", 19, "Epic Records", "2023 blockbuster"],
-    [231, 115, "ASTROWORLD", 17, "Epic Records", "Career peak"],
-    [232, 116, "CALL ME IF YOU GET LOST", 16, "Columbia Records", "Grammy winner"],
-    [233, 116, "IGOR", 12, "Columbia Records", "Genre-bending"],
-    [234, 117, "Might Delete Later", 9, "Dreamville", "2024 mixtape"],
-    [235, 117, "The Off-Season", 12, "Dreamville", "Quick hitter"],
-    [236, 118, "For All The Dogs", 23, "OVO Sound", "2023 album"],
-    [237, 118, "Her Loss", 16, "OVO Sound", "21 Savage collab"],
-    [238, 119, "American Dream", 15, "Epic Records", "2024 album"],
-    [239, 119, "Her Loss", 16, "Epic Records", "Drake collab"],
-    [240, 120, "HEROES & VILLAINS", 15, "Republic Records", "2022 album"],
-    [241, 120, "WE DONT TRUST YOU", 17, "Republic Records", "2024 Future collab"],
-    [242, 121, "WE DONT TRUST YOU", 17, "Freebandz", "2024 Metro collab"],
-    [243, 121, "I NEVER LIKED YOU", 16, "Freebandz", "2022 album"],
-    [244, 122, "Its Only Me", 23, "Motown Records", "2022 album"],
-    [245, 122, "My Turn", 20, "Motown Records", "Breakthrough"],
-    [246, 123, "One of Wun", 19, "Young Stoner Life", "2024 album"],
-    [247, 123, "DS4EVER", 19, "Young Stoner Life", "2022 album"],
-    [248, 124, "Love Sick", 15, "Atlantic Records", "2023 album"],
-    [249, 124, "Life of a DON", 16, "Atlantic Records", "2021 album"],
-    [250, 125, "Scarlet", 16, "RCA Records", "2023 album"],
-    [251, 125, "Planet Her", 14, "RCA Records", "Breakout album"],
-    [252, 126, "GUTS", 12, "Geffen Records", "2023 sophomore"],
-    [253, 126, "SOUR", 11, "Geffen Records", "Record-breaking debut"],
-    [254, 127, "The Rise and Fall of a Midwest Princess", 14, "Island Records", "2023 breakthrough"],
-    [255, 127, "Pink Pony Club", 1, "Atlantic Records", "Viral single"],
-    [256, 128, "The Secret of Us", 13, "Interscope Records", "2024 album"],
-    [257, 128, "Good Riddance", 12, "Interscope Records", "2023 debut"],
-    [258, 129, "THINK LATER", 14, "RCA Records", "2023 album"],
-    [259, 129, "i used to think i could fly", 13, "RCA Records", "2022 album"],
-    [260, 130, "Y2K", 10, "Capitol Records", "2024 debut"],
-    [261, 130, "Like..?", 8, "Capitol Records", "Breakthrough EP"],
-    [262, 131, "Bewitched", 13, "AWAL", "2023 jazz pop"],
-    [263, 131, "Everything I Know About Love", 10, "AWAL", "2022 debut"],
-    [264, 132, "Snow Angel", 16, "Interscope Records", "2023 debut"],
-    [265, 132, "Talk Too Much", 4, "Interscope Records", "EP release"],
-    [266, 133, "Get Up", 6, "ADOR", "2023 EP"],
-    [267, 133, "NewJeans 1st EP", 4, "ADOR", "Viral debut 2022"],
-    [268, 134, "UNFORGIVEN", 8, "Source Music", "2023 album"],
-    [269, 134, "FEARLESS", 5, "Source Music", "2022 debut"],
-    [270, 135, "5-STAR", 8, "JYP Entertainment", "2023 album"],
-    [271, 135, "MAXIDENT", 8, "JYP Entertainment", "2022 album"],
-    [272, 136, "FML", 11, "Pledis Entertainment", "2023 album"],
-    [273, 136, "SEVENTEENTH HEAVEN", 6, "Pledis Entertainment", "2023 mini"],
-    [274, 137, "THE WORLD EP.2", 11, "KQ Entertainment", "2023 album"],
-    [275, 137, "THE WORLD EP.1", 7, "KQ Entertainment", "2022 album"],
-    [276, 138, "SOS", 23, "Top Dawg", "2022 album of year"],
-    [277, 138, "Lana", 9, "Top Dawg", "2024 deluxe"],
-    [278, 139, "RENAISSANCE", 16, "Columbia Records", "Dance album"],
-    [279, 139, "COWBOY CARTER", 27, "Columbia Records", "2024 country"],
-    [280, 140, "Dawn FM", 16, "XO Records", "Synth vibes"],
-    [281, 140, "After Hours", 14, "XO Records", "Blinding Lights era"],
-    [282, 141, "nadie sabe lo que va a pasar manana", 22, "Rimas", "2023 album"],
-    [283, 141, "Un Verano Sin Ti", 23, "Rimas", "2022 massive hit"],
-    [284, 142, "Genesis", 15, "Double P Records", "2023 breakthrough"],
-    [285, 142, "Exodo", 20, "Double P Records", "2024 album"],
-    [286, 143, "Pa Las Baby's y Belikeada", 9, "Rancho Humilde", "2023 album"],
-    [287, 143, "Del Barrio Hasta Aqui", 15, "Rancho Humilde", "2022 album"],
-    [288, 144, "Hit Me Hard and Soft", 10, "Interscope Records", "2024 album"],
-    [289, 144, "Happier Than Ever", 16, "Interscope Records", "2021 album"],
-    [290, 145, "Radical Optimism", 11, "Warner Records", "2024 album"],
-    [291, 145, "Future Nostalgia", 11, "Warner Records", "Disco pop hit"],
-    [292, 146, "Harrys House", 13, "Columbia Records", "2022 album"],
-    [293, 146, "Fine Line", 12, "Columbia Records", "Solo breakthrough"],
-    [294, 147, "Unreal Unearth", 16, "Island Records", "2023 album"],
-    [295, 147, "Wasteland Baby", 14, "Island Records", "2019 album"],
-    [296, 148, "Stick Season", 14, "Mercury Records", "2022 breakthrough"],
-    [297, 148, "Stick Season Forever", 34, "Mercury Records", "2024 deluxe"],
-    [298, 149, "Zach Bryan", 16, "Warner Records", "2023 self-titled"],
-    [299, 149, "American Heartbreak", 34, "Warner Records", "Triple album"]
+    [
+      2,
+      7,
+      "Midnights",
+      13,
+      "Republic Records",
+      "Synth-pop late night vibes"
+    ],
+    [
+      3,
+      2,
+      "Good Kid, M.A.A.D City",
+      12,
+      "Interscope",
+      "Compton coming-of-age story"
+    ],
+    [
+      4,
+      2,
+      "DAMN.",
+      14,
+      "Interscope",
+      "Pulitzer Prize winner"
+    ],
+    [
+      5,
+      3,
+      "The Album",
+      8,
+      "YG Entertainment",
+      "First full-length album"
+    ],
+    [
+      6,
+      3,
+      "Born Pink",
+      8,
+      "YG Entertainment",
+      "World tour era"
+    ],
+    [
+      7,
+      4,
+      "Emails I Cant Send",
+      13,
+      "Island Records",
+      "Emotional debut"
+    ],
+    [
+      8,
+      4,
+      "Short n Sweet",
+      12,
+      "Island Records",
+      "Sophomore album"
+    ],
+    [
+      9,
+      5,
+      "Hollywoods Bleeding",
+      17,
+      "Republic Records",
+      "Genre-blending hits"
+    ],
+    [
+      10,
+      5,
+      "Twelve Carat Toothache",
+      14,
+      "Republic Records",
+      "Personal struggles theme"
+    ],
+    [
+      11,
+      6,
+      "Take Care",
+      20,
+      "Young Money",
+      "Breakthrough album"
+    ],
+    [
+      12,
+      7,
+      "The Life of a Show girl",
+      12,
+      "Republic Records",
+      "inspired by the tour and her romantic relationship with the football player Travis Kelce, Swift conceived The Life of a Showgirl as a vibrant and lively album that reflected her triumphant state of mind."
+    ],
+    [
+      13,
+      8,
+      "Purpose",
+      13,
+      "Def Jam",
+      "Purpose is the fourth studio album by the Canadian singer Justin Bieber. It was released through Def Jam Recordings, as a follow-up to his third studio album Believe."
+    ],
+    [
+      200,
+      100,
+      "This Is Why",
+      10,
+      "Atlantic Records",
+      "2023 comeback album"
+    ],
+    [
+      201,
+      100,
+      "After Laughter",
+      12,
+      "Fueled By Ramen",
+      "Synth-pop evolution"
+    ],
+    [
+      202,
+      101,
+      "Kings of the New Age",
+      11,
+      "Pure Noise Records",
+      "2022 release"
+    ],
+    [
+      203,
+      101,
+      "Living Proof",
+      10,
+      "Pure Noise Records",
+      "Fan favorite"
+    ],
+    [
+      204,
+      102,
+      "Saviors",
+      15,
+      "Reprise Records",
+      "2024 comeback"
+    ],
+    [
+      205,
+      102,
+      "American Idiot",
+      13,
+      "Reprise Records",
+      "Rock opera classic"
+    ],
+    [
+      206,
+      103,
+      "ONE MORE TIME...",
+      17,
+      "Columbia Records",
+      "2023 reunion album"
+    ],
+    [
+      207,
+      103,
+      "Enema of the State",
+      12,
+      "MCA Records",
+      "Breakthrough album"
+    ],
+    [
+      208,
+      104,
+      "Heaven :x: Hell",
+      20,
+      "Rise Records",
+      "Final album 2024"
+    ],
+    [
+      209,
+      104,
+      "All Killer No Filler",
+      13,
+      "Island Records",
+      "Debut breakthrough"
+    ],
+    [
+      210,
+      105,
+      "Neck Deep",
+      11,
+      "Hopeless Records",
+      "2024 self-titled"
+    ],
+    [
+      211,
+      105,
+      "All Distortions Are Intentional",
+      13,
+      "Hopeless Records",
+      "Concept album"
+    ],
+    [
+      212,
+      106,
+      "I Want To Disappear",
+      10,
+      "Pure Noise Records",
+      "2024 return"
+    ],
+    [
+      213,
+      106,
+      "Proper Dose",
+      10,
+      "Pure Noise Records",
+      "Mature sound"
+    ],
+    [
+      214,
+      107,
+      "Tell Me Im Alive",
+      15,
+      "Fueled By Ramen",
+      "2023 release"
+    ],
+    [
+      215,
+      107,
+      "So Wrong Its Right",
+      12,
+      "Hopeless Records",
+      "Career defining"
+    ],
+    [
+      216,
+      108,
+      "INTELLECTUAL PROPERTY",
+      14,
+      "300 Entertainment",
+      "2023 album"
+    ],
+    [
+      217,
+      108,
+      "Greatest Hits",
+      16,
+      "300 Entertainment",
+      "Compilation"
+    ],
+    [
+      218,
+      109,
+      "Why Would I Watch",
+      10,
+      "Wax Bodega",
+      "2023 emo revival"
+    ],
+    [
+      219,
+      109,
+      "Youll Be Fine",
+      10,
+      "No Sleep Records",
+      "Breakthrough"
+    ],
+    [
+      220,
+      110,
+      "HELLMODE",
+      13,
+      "Polyvinyl Records",
+      "2023 masterpiece"
+    ],
+    [
+      221,
+      110,
+      "NO DREAM",
+      11,
+      "Polyvinyl Records",
+      "Punk energy"
+    ],
+    [
+      222,
+      111,
+      "SUPERCHARGED",
+      10,
+      "Concord Records",
+      "2024 album"
+    ],
+    [
+      223,
+      111,
+      "Americana",
+      14,
+      "Columbia Records",
+      "Classic album"
+    ],
+    [
+      224,
+      112,
+      "Blood Hair and Eyeballs",
+      13,
+      "Rise Records",
+      "2024 release"
+    ],
+    [
+      225,
+      112,
+      "From Here to Infirmary",
+      14,
+      "Vagrant Records",
+      "Fan favorite"
+    ],
+    [
+      226,
+      113,
+      "Feeling Not Found",
+      17,
+      "Counter Intuitive",
+      "2023 double album"
+    ],
+    [
+      227,
+      113,
+      "GAMI GANG",
+      26,
+      "Counter Intuitive",
+      "Ambitious project"
+    ],
+    [
+      228,
+      114,
+      "Losing What We Love",
+      10,
+      "Rise Records",
+      "2023 release"
+    ],
+    [
+      229,
+      114,
+      "Copacetic",
+      12,
+      "Rise Records",
+      "Debut album"
+    ],
+    [
+      230,
+      115,
+      "UTOPIA",
+      19,
+      "Epic Records",
+      "2023 blockbuster"
+    ],
+    [
+      231,
+      115,
+      "ASTROWORLD",
+      17,
+      "Epic Records",
+      "Career peak"
+    ],
+    [
+      232,
+      116,
+      "CALL ME IF YOU GET LOST",
+      16,
+      "Columbia Records",
+      "Grammy winner"
+    ],
+    [
+      233,
+      116,
+      "IGOR",
+      12,
+      "Columbia Records",
+      "Genre-bending"
+    ],
+    [
+      234,
+      117,
+      "Might Delete Later",
+      9,
+      "Dreamville",
+      "2024 mixtape"
+    ],
+    [
+      235,
+      117,
+      "The Off-Season",
+      12,
+      "Dreamville",
+      "Quick hitter"
+    ],
+    [
+      236,
+      118,
+      "For All The Dogs",
+      23,
+      "OVO Sound",
+      "2023 album"
+    ],
+    [
+      237,
+      118,
+      "Her Loss",
+      16,
+      "OVO Sound",
+      "21 Savage collab"
+    ],
+    [
+      238,
+      119,
+      "American Dream",
+      15,
+      "Epic Records",
+      "2024 album"
+    ],
+    [
+      239,
+      119,
+      "Her Loss",
+      16,
+      "Epic Records",
+      "Drake collab"
+    ],
+    [
+      240,
+      120,
+      "HEROES & VILLAINS",
+      15,
+      "Republic Records",
+      "2022 album"
+    ],
+    [
+      241,
+      120,
+      "WE DONT TRUST YOU",
+      17,
+      "Republic Records",
+      "2024 Future collab"
+    ],
+    [
+      242,
+      121,
+      "WE DONT TRUST YOU",
+      17,
+      "Freebandz",
+      "2024 Metro collab"
+    ],
+    [
+      243,
+      121,
+      "I NEVER LIKED YOU",
+      16,
+      "Freebandz",
+      "2022 album"
+    ],
+    [
+      244,
+      122,
+      "Its Only Me",
+      23,
+      "Motown Records",
+      "2022 album"
+    ],
+    [
+      245,
+      122,
+      "My Turn",
+      20,
+      "Motown Records",
+      "Breakthrough"
+    ],
+    [
+      246,
+      123,
+      "One of Wun",
+      19,
+      "Young Stoner Life",
+      "2024 album"
+    ],
+    [
+      247,
+      123,
+      "DS4EVER",
+      19,
+      "Young Stoner Life",
+      "2022 album"
+    ],
+    [
+      248,
+      124,
+      "Love Sick",
+      15,
+      "Atlantic Records",
+      "2023 album"
+    ],
+    [
+      249,
+      124,
+      "Life of a DON",
+      16,
+      "Atlantic Records",
+      "2021 album"
+    ],
+    [
+      250,
+      125,
+      "Scarlet",
+      16,
+      "RCA Records",
+      "2023 album"
+    ],
+    [
+      251,
+      125,
+      "Planet Her",
+      14,
+      "RCA Records",
+      "Breakout album"
+    ],
+    [
+      252,
+      126,
+      "GUTS",
+      12,
+      "Geffen Records",
+      "2023 sophomore"
+    ],
+    [
+      253,
+      126,
+      "SOUR",
+      11,
+      "Geffen Records",
+      "Record-breaking debut"
+    ],
+    [
+      254,
+      127,
+      "The Rise and Fall of a Midwest Princess",
+      14,
+      "Island Records",
+      "2023 breakthrough"
+    ],
+    [
+      255,
+      127,
+      "Pink Pony Club",
+      1,
+      "Atlantic Records",
+      "Viral single"
+    ],
+    [
+      256,
+      128,
+      "The Secret of Us",
+      13,
+      "Interscope Records",
+      "2024 album"
+    ],
+    [
+      257,
+      128,
+      "Good Riddance",
+      12,
+      "Interscope Records",
+      "2023 debut"
+    ],
+    [
+      258,
+      129,
+      "THINK LATER",
+      14,
+      "RCA Records",
+      "2023 album"
+    ],
+    [
+      259,
+      129,
+      "i used to think i could fly",
+      13,
+      "RCA Records",
+      "2022 album"
+    ],
+    [
+      260,
+      130,
+      "Y2K",
+      10,
+      "Capitol Records",
+      "2024 debut"
+    ],
+    [
+      261,
+      130,
+      "Like..?",
+      8,
+      "Capitol Records",
+      "Breakthrough EP"
+    ],
+    [
+      262,
+      131,
+      "Bewitched",
+      13,
+      "AWAL",
+      "2023 jazz pop"
+    ],
+    [
+      263,
+      131,
+      "Everything I Know About Love",
+      10,
+      "AWAL",
+      "2022 debut"
+    ],
+    [
+      264,
+      132,
+      "Snow Angel",
+      16,
+      "Interscope Records",
+      "2023 debut"
+    ],
+    [
+      265,
+      132,
+      "Talk Too Much",
+      4,
+      "Interscope Records",
+      "EP release"
+    ],
+    [
+      266,
+      133,
+      "Get Up",
+      6,
+      "ADOR",
+      "2023 EP"
+    ],
+    [
+      267,
+      133,
+      "NewJeans 1st EP",
+      4,
+      "ADOR",
+      "Viral debut 2022"
+    ],
+    [
+      268,
+      134,
+      "UNFORGIVEN",
+      8,
+      "Source Music",
+      "2023 album"
+    ],
+    [
+      269,
+      134,
+      "FEARLESS",
+      5,
+      "Source Music",
+      "2022 debut"
+    ],
+    [
+      270,
+      135,
+      "5-STAR",
+      8,
+      "JYP Entertainment",
+      "2023 album"
+    ],
+    [
+      271,
+      135,
+      "MAXIDENT",
+      8,
+      "JYP Entertainment",
+      "2022 album"
+    ],
+    [
+      272,
+      136,
+      "FML",
+      11,
+      "Pledis Entertainment",
+      "2023 album"
+    ],
+    [
+      273,
+      136,
+      "SEVENTEENTH HEAVEN",
+      6,
+      "Pledis Entertainment",
+      "2023 mini"
+    ],
+    [
+      274,
+      137,
+      "THE WORLD EP.2",
+      11,
+      "KQ Entertainment",
+      "2023 album"
+    ],
+    [
+      275,
+      137,
+      "THE WORLD EP.1",
+      7,
+      "KQ Entertainment",
+      "2022 album"
+    ],
+    [
+      276,
+      138,
+      "SOS",
+      23,
+      "Top Dawg",
+      "2022 album of year"
+    ],
+    [
+      277,
+      138,
+      "Lana",
+      9,
+      "Top Dawg",
+      "2024 deluxe"
+    ],
+    [
+      278,
+      139,
+      "RENAISSANCE",
+      16,
+      "Columbia Records",
+      "Dance album"
+    ],
+    [
+      279,
+      139,
+      "COWBOY CARTER",
+      27,
+      "Columbia Records",
+      "2024 country"
+    ],
+    [
+      280,
+      140,
+      "Dawn FM",
+      16,
+      "XO Records",
+      "Synth vibes"
+    ],
+    [
+      281,
+      140,
+      "After Hours",
+      14,
+      "XO Records",
+      "Blinding Lights era"
+    ],
+    [
+      282,
+      141,
+      "nadie sabe lo que va a pasar manana",
+      22,
+      "Rimas",
+      "2023 album"
+    ],
+    [
+      283,
+      141,
+      "Un Verano Sin Ti",
+      23,
+      "Rimas",
+      "2022 massive hit"
+    ],
+    [
+      284,
+      142,
+      "Genesis",
+      15,
+      "Double P Records",
+      "2023 breakthrough"
+    ],
+    [
+      285,
+      142,
+      "Exodo",
+      20,
+      "Double P Records",
+      "2024 album"
+    ],
+    [
+      286,
+      143,
+      "Pa Las Baby's y Belikeada",
+      9,
+      "Rancho Humilde",
+      "2023 album"
+    ],
+    [
+      287,
+      143,
+      "Del Barrio Hasta Aqui",
+      15,
+      "Rancho Humilde",
+      "2022 album"
+    ],
+    [
+      288,
+      144,
+      "Hit Me Hard and Soft",
+      10,
+      "Interscope Records",
+      "2024 album"
+    ],
+    [
+      289,
+      144,
+      "Happier Than Ever",
+      16,
+      "Interscope Records",
+      "2021 album"
+    ],
+    [
+      290,
+      145,
+      "Radical Optimism",
+      11,
+      "Warner Records",
+      "2024 album"
+    ],
+    [
+      291,
+      145,
+      "Future Nostalgia",
+      11,
+      "Warner Records",
+      "Disco pop hit"
+    ],
+    [
+      292,
+      146,
+      "Harrys House",
+      13,
+      "Columbia Records",
+      "2022 album"
+    ],
+    [
+      293,
+      146,
+      "Fine Line",
+      12,
+      "Columbia Records",
+      "Solo breakthrough"
+    ],
+    [
+      294,
+      147,
+      "Unreal Unearth",
+      16,
+      "Island Records",
+      "2023 album"
+    ],
+    [
+      295,
+      147,
+      "Wasteland Baby",
+      14,
+      "Island Records",
+      "2019 album"
+    ],
+    [
+      296,
+      148,
+      "Stick Season",
+      14,
+      "Mercury Records",
+      "2022 breakthrough"
+    ],
+    [
+      297,
+      148,
+      "Stick Season Forever",
+      34,
+      "Mercury Records",
+      "2024 deluxe"
+    ],
+    [
+      298,
+      149,
+      "Zach Bryan",
+      16,
+      "Warner Records",
+      "2023 self-titled"
+    ],
+    [
+      299,
+      149,
+      "American Heartbreak",
+      34,
+      "Warner Records",
+      "Triple album"
+    ],
+    [
+      300,
+      150,
+      "Lightning on the Strings, Thunder on the Mic",
+      12,
+      "Rench Audio",
+      "Debut album blending bluegrass and rap"
+    ]
   ]
 }
