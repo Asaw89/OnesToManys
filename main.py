@@ -218,16 +218,15 @@ def get_all_musician_albums(name: str):
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
 
-    cursor.execute("SELECT * FROM albums WHERE musician_name = LOWER (?)", (name,))
-
+    cursor.execute("SELECT * FROM musicians WHERE LOWER(musician_name) = LOWER(?)", (name,))
     musician = cursor.fetchone()
-    rows = cursor.fetchall()
+    rows = cursor.fetchone()
     if musician is None:
         connection.close()
         return {"Musician not found"}
     musician_id = musician[0]
 
-    cursor.execute("SELECT * FROM albums WHERE musician_id = ?", (musician_id))
+    cursor.execute("SELECT * FROM albums WHERE musician_id = ?", (musician_id,))
     rows=cursor.fetchall()
     connection.close()
 
