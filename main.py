@@ -8,6 +8,7 @@ app = FastAPI()
     #http://127.0.0.1:8000/docs
     #uvicorn main:app --reload
     #curl -s http://localhost:8000/musicians | jq
+    #source venv/bin/activate
 
 #all of the albums are associated with this musician
 
