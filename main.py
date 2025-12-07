@@ -122,8 +122,31 @@ def get_musician_by_id(musician_id: int):
     }
     return {"musician": musician}
 
+@app.get("/albums/search/{name}")
+def get_album(name:str):
+    connection=sqlite3.connect("music.db")
+    cursor=connection.cursor()
+    cursor.execute("SELECT * FROM albums WHERE LOWER(album_name) = LOWER(?)",(name, ))
+    row = cursor.fetchone()
+    if row is None:
+        cursor.execute("SELECT * FROM albums ORDER BY RANDOM() LIMIT 1")
+        suggestion = cursor.fetchone()
+        connection.close()
+        return {"error": "Album not found", "suggestion": suggestion}
+    connection.close()
+
+    album =({
+            "id": row[0],
+            "musician_id": row[1],
+            "title": row[2],
+            "number_of_tracks": row[3],
+            "label": row[4],
+            "description": row[5]
+        })
+    return {"album": album}
+
 @app.get("/albums/search/{album_id}")
-def get_album(album_id:int):
+def get_album_by_id(album_id:int):
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
     cursor.execute("SELECT * FROM albums WHERE id = ?", (album_id,))
