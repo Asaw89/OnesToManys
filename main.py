@@ -4,7 +4,8 @@ from pydantic import BaseModel #FastAPI uses pydantic models
 from typing import Optional
 import json
 
-app = FastAPI() #http://127.0.0.1:8000/docs
+app = FastAPI()
+    #http://127.0.0.1:8000/docs
     #uvicorn main:app --reload
     #http://localhost:8000/musicians
 
