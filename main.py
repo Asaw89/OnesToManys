@@ -126,7 +126,7 @@ def get_musician_by_id(musician_id: int):
 def get_album(title:str):
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
-    cursor.execute("SELECT * FROM albums WHERE LOWER(album_name) = LOWER(?)",(title, ))
+    cursor.execute("SELECT * FROM albums WHERE LOWER(title) = LOWER(?)",(title, ))
     row = cursor.fetchone()
     if row is None:
         cursor.execute("SELECT * FROM albums ORDER BY RANDOM() LIMIT 1")
