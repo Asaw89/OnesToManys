@@ -7,7 +7,7 @@ import json
 app = FastAPI()
     #http://127.0.0.1:8000/docs
     #uvicorn main:app --reload
-    #http://localhost:8000/musicians
+    #curl -s http://localhost:8000/musicians | jq
 
 #all of the albums are associated with this musician
 
