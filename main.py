@@ -122,11 +122,11 @@ def get_musician_by_id(musician_id: int):
     }
     return {"musician": musician}
 
-@app.get("/albums/search/{name}")
-def get_album(name:str):
+@app.get("/albums/search/title/{title}")
+def get_album(title:str):
     connection=sqlite3.connect("music.db")
     cursor=connection.cursor()
-    cursor.execute("SELECT * FROM albums WHERE LOWER(album_name) = LOWER(?)",(name, ))
+    cursor.execute("SELECT * FROM albums WHERE LOWER(album_name) = LOWER(?)",(title, ))
     row = cursor.fetchone()
     if row is None:
         cursor.execute("SELECT * FROM albums ORDER BY RANDOM() LIMIT 1")
