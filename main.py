@@ -78,10 +78,13 @@ def get_musician_by_id(musician_id: int):
     cursor = connection.cursor()
     cursor.execute("SELECT * FROM musicians WHERE id = ?", (musician_id,))
     row = cursor.fetchone()
-    connection.close()
 
     if row is None:
-        return {"error": "Musician not found"}
+        cursor.execute("SELECT * FROM musicians ORDER BY RANDOM() LIMIT 1")
+        suggestion = cursor.fetchone()
+        connection.close()
+        return {"error": "Musician not found", "suggestion": suggestion}
+    connection.close()
 
     musician = {
         "id": row[0],
