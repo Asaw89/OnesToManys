@@ -72,6 +72,26 @@ def get_musician(name:str):
     }
     return {"musician": musician}
 
+@app.get("/musicians/{musician_id}")
+def get_musician_by_id(musician_id: int):
+    connection = sqlite3.connect("music.db")
+    cursor = connection.cursor()
+    cursor.execute("SELECT * FROM musicians WHERE id = ?", (musician_id,))
+    row = cursor.fetchone()
+    connection.close()
+
+    if row is None:
+        return {"error": "Musician not found"}
+
+    musician = {
+        "id": row[0],
+        "musician_name": row[1],
+        "genre": row[2],
+        "year_formed": row[3],
+        "origin": row[4]
+    }
+    return {"musician": musician}
+
 @app.get("/musicians/search/{name}/albums")
 def get_all_musician_albums(name: str):
     connection=sqlite3.connect("music.db")
@@ -103,25 +123,36 @@ def get_all_musician_albums(name: str):
         })
     return {"albums": albums}
 
-@app.get("/musicians/{musician_id}")
-def get_musician_by_id(musician_id: int):
+@app.get("/musicians/{musician_id}/albums")
+def get_all_musician_albums_by_ID(musician_id: int):
     connection = sqlite3.connect("music.db")
     cursor = connection.cursor()
-    cursor.execute("SELECT * FROM musicians WHERE id = ?", (musician_id,))
-    row = cursor.fetchone()
-    connection.close()
 
-    if row is None:
+    cursor.execute("SELECT * FROM musicians WHERE id = ?", (musician_id,))
+    musician = cursor.fetchone()
+
+    if musician is None:
+        connection.close()
         return {"error": "Musician not found"}
 
-    musician = {
-        "id": row[0],
-        "musician_name": row[1],
-        "genre": row[2],
-        "year_formed": row[3],
-        "origin": row[4]
-    }
-    return {"musician": musician}
+    cursor.execute("SELECT * FROM albums WHERE musician_id = ?", (musician_id,))
+    rows = cursor.fetchall()
+    connection.close()
+
+    if rows == []:
+        return {"No albums found"}
+
+    albums = []
+    for row in rows:
+        albums.append({
+            "id": row[0],
+            "musician_id": row[1],
+            "title": row[2],
+            "number_of_tracks": row[3],
+            "label": row[4],
+            "description": row[5]
+        })
+    return {"albums": albums}
 
 @app.get("/albums/search/title/{title}")
 def get_album(title:str):
