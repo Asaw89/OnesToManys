@@ -30,10 +30,10 @@
     ],
     [
       7,
-      "Taylor Swift",
-      "Pop",
-      2006,
-      "Reading,PA"
+      "Updated Name",
+      "Updated Genre",
+      2020,
+      "Updated City"
     ],
     [
       8,
@@ -398,6 +398,20 @@
       "Bluegrass Hip-Hop",
       2006,
       "Brooklyn, NY"
+    ],
+    [
+      151,
+      "Daft Punk",
+      "Electronic",
+      1993,
+      "Paris, France"
+    ],
+    [
+      152,
+      "Test Band 12345",
+      "Test Genre",
+      2024,
+      "Test City, TS"
     ]
   ],
   "albums": [
@@ -1304,6 +1318,94 @@
       12,
       "Rench Audio",
       "Debut album blending bluegrass and rap"
+    ],
+    [
+      301,
+      150,
+      "Nickel and Dime Blues",
+      11,
+      "Rench Audio",
+      "Second studio album"
+    ],
+    [
+      302,
+      7,
+      "Taylor Swift",
+      11,
+      "Big Machine",
+      "Debut country album"
+    ],
+    [
+      303,
+      7,
+      "Speak Now",
+      14,
+      "Big Machine",
+      "Entirely self-written album"
+    ],
+    [
+      304,
+      7,
+      "Red",
+      16,
+      "Big Machine",
+      "Genre-blending with We Are Never Getting Back Together"
+    ],
+    [
+      305,
+      7,
+      "1989",
+      13,
+      "Big Machine",
+      "Full pop transformation"
+    ],
+    [
+      306,
+      7,
+      "Reputation",
+      15,
+      "Big Machine",
+      "Dark pop era"
+    ],
+    [
+      307,
+      7,
+      "Lover",
+      18,
+      "Republic Records",
+      "Romantic and colorful era"
+    ],
+    [
+      308,
+      7,
+      "Folklore",
+      16,
+      "Republic Records",
+      "Indie folk surprise album"
+    ],
+    [
+      309,
+      7,
+      "Evermore",
+      15,
+      "Republic Records",
+      "Folklore sister album"
+    ],
+    [
+      310,
+      7,
+      "The Tortured Poets Department",
+      16,
+      "Republic Records",
+      "2024 album"
+    ],
+    [
+      311,
+      7,
+      "Test Album 12345",
+      10,
+      "Test Label",
+      "Test Description"
     ]
   ]
 }

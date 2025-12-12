@@ -92,37 +92,6 @@ def get_musician_by_id(musician_id: int):
     }
     return {"musician": musician}
 
-@app.get("/musicians/search/{name}/albums")
-def get_all_musician_albums(name: str):
-    connection=sqlite3.connect("music.db")
-    cursor=connection.cursor()
-
-    cursor.execute("SELECT * FROM musicians WHERE LOWER(musician_name) = LOWER(?)", (name,))
-    musician = cursor.fetchone()
-    if musician is None:
-        connection.close()
-        return {"Musician not found"}
-    musician_id = musician[0]
-
-    cursor.execute("SELECT * FROM albums WHERE musician_id = ?", (musician_id,))
-    rows=cursor.fetchall()
-    connection.close()
-
-    if rows == []:
-        return {'Albums not found'}
-
-    albums = []
-    for row in rows:
-        albums.append({
-            "id": row[0],
-            "musician_id": row[1],
-            "title": row[2],
-            "number_of_tracks": row[3],
-            "label": row[4],
-            "description": row[5]
-        })
-    return {"albums": albums}
-
 @app.get("/musicians/{musician_id}/albums")
 def get_all_musician_albums_by_ID(musician_id: int):
     connection = sqlite3.connect("music.db")
@@ -141,6 +110,37 @@ def get_all_musician_albums_by_ID(musician_id: int):
 
     if rows == []:
         return {"No albums found"}
+
+    albums = []
+    for row in rows:
+        albums.append({
+            "id": row[0],
+            "musician_id": row[1],
+            "title": row[2],
+            "number_of_tracks": row[3],
+            "label": row[4],
+            "description": row[5]
+        })
+    return {"albums": albums}
+
+@app.get("/musicians/search/{name}/albums")
+def get_all_musician_albums(name: str):
+    connection=sqlite3.connect("music.db")
+    cursor=connection.cursor()
+
+    cursor.execute("SELECT * FROM musicians WHERE LOWER(musician_name) = LOWER(?)", (name,))
+    musician = cursor.fetchone()
+    if musician is None:
+        connection.close()
+        return {"Musician not found"}
+    musician_id = musician[0]
+
+    cursor.execute("SELECT * FROM albums WHERE musician_id = ?", (musician_id,))
+    rows=cursor.fetchall()
+    connection.close()
+
+    if rows == []:
+        return {'Albums not found'}
 
     albums = []
     for row in rows:
