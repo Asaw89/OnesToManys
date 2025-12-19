@@ -3,8 +3,16 @@ import sqlite3
 from pydantic import BaseModel #FastAPI uses pydantic models
 from typing import Optional
 import json
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], # This allows all sites to talk to the API for now
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
     #http://127.0.0.1:8000/docs
     #uvicorn main:app --reload
     #curl -s http://localhost:8000/musicians | jq
