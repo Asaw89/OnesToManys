@@ -1,14 +1,30 @@
-    <html>
-      <head>
-        <meta charset ="UTF-8" />
-        <title> Music Library </title>
-      </head>
-      <body>
-        <h1>Music Library</h1>
-        <h2>Musicians</h2>
-        <div id="musician-list">Loading...</div>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Music Library</title>
+  </head>
+  <body>
+    <h1>Music Library</h1>
+    <h2>Musicians</h2>
+    <div id="musicians-list">Loading...</div>
 
-        <script src="api.js"></script>
-        <script src="app.js"></script>
-      </body>
-    </html>
+    <script>
+      fetch('http://localhost:8000/musicians')
+        .then(response => response.json())
+        .then(data => {
+          let html = '';
+          for (let musician of data.musicians) {
+            html += `
+              <div style="border: 1px solid black; padding: 10px; margin: 10px;">
+                <h3>${musician.musician_name}</h3>
+                <p>Genre: ${musician.genre}</p>
+                <p>Year Formed: ${musician.year_formed}</p>
+                <p>Origin: ${musician.origin}</p>
+              </div>
+            `;
+          }
+          document.getElementById('musicians-list').innerHTML = html;
+        });
+    </script>
+  </body>
+</html>
